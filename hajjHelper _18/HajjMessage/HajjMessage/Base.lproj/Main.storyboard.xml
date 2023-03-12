@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0D9-DH-Tid">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Send Location-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HajjMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muslimfamily-1" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-yd-aDq">
+                                <rect key="frame" x="10" y="38" width="304" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="LX5-Y5-A8B"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cX-g8-qG8">
+                                <rect key="frame" x="16" y="333" width="288" height="103"/>
+                                <color key="backgroundColor" red="0.81805437654249691" green="1" blue="0.76942401528255966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Send my Location">
+                                    <color key="titleColor" red="0.26666666666666666" green="0.32941176470588235" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendMessageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtR-Dg-klO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73655585883507957" green="1" blue="0.6485950601905619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3IP-yd-aDq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="JpD-LO-jeF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3IP-yd-aDq" secondAttribute="trailing" constant="6" id="Qak-SS-s8S"/>
+                            <constraint firstItem="0cX-g8-qG8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VCE-Uj-cbG"/>
+                            <constraint firstItem="0cX-g8-qG8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aO7-b2-o9S"/>
+                            <constraint firstItem="0cX-g8-qG8" firstAttribute="top" secondItem="3IP-yd-aDq" secondAttribute="bottom" constant="39" id="tdN-UY-GKr"/>
+                            <constraint firstItem="3IP-yd-aDq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xpS-D7-LNK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0cX-g8-qG8" secondAttribute="bottom" constant="83" id="y6l-QW-D9b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Send Location" image="speech-bubble-3" id="0t4-iT-g73"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="530.625" y="-1108.0985915492959"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="FrC-4h-28a">
+            <objects>
+                <viewController id="pLt-kW-Vgr" customClass="ThirdViewController" customModule="HajjMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BeB-DH-vpN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbI-wv-MWj">
+                                <rect key="frame" x="154" y="522" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hackathonblacklogo" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-pO-7IX">
+                                <rect key="frame" x="43" y="394" width="235" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="WyF-zm-EyX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiP-Yq-ggP">
+                                <rect key="frame" x="16" y="38" width="150" height="150"/>
+                                <state key="normal" image="tipsbutton-2"/>
+                                <connections>
+                                    <action selector="onTipsButtonWasPressed:" destination="pLt-kW-Vgr" eventType="touchUpInside" id="DUI-Py-Qu1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGD-Uc-Mvj">
+                                <rect key="frame" x="16" y="236" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="iRZ-xO-7Js"/>
+                                </constraints>
+                                <state key="normal" image="stepsbutton-2"/>
+                                <connections>
+                                    <action selector="onStepsButtonWasPressed:" destination="pLt-kW-Vgr" eventType="touchUpInside" id="iNQ-8a-qS5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-XF-CnO">
+                                <rect key="frame" x="154" y="141" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="SPh-pH-rpr"/>
+                                </constraints>
+                                <state key="normal" image="emergencybutton-2"/>
+                                <connections>
+                                    <action selector="makecall:" destination="pLt-kW-Vgr" eventType="touchUpInside" id="azm-RY-bJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.74851058309006757" blue="0.77691894985480403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W0w-pO-7IX" firstAttribute="top" secondItem="lGD-Uc-Mvj" secondAttribute="bottom" constant="8" symbolic="YES" id="3Ja-0q-acZ"/>
+                            <constraint firstItem="fYc-XF-CnO" firstAttribute="top" secondItem="ZBM-O2-fPR" secondAttribute="top" constant="121" id="BoX-W6-X2t"/>
+                            <constraint firstItem="fYc-XF-CnO" firstAttribute="trailing" secondItem="BeB-DH-vpN" secondAttribute="trailingMargin" id="C0U-ZD-V7C"/>
+                            <constraint firstItem="fYc-XF-CnO" firstAttribute="leading" secondItem="ZBM-O2-fPR" secondAttribute="leading" constant="154" id="GgH-Bo-uPC"/>
+                            <constraint firstItem="JiP-Yq-ggP" firstAttribute="trailing" secondItem="lGD-Uc-Mvj" secondAttribute="trailing" id="IcN-Dc-4cl"/>
+                            <constraint firstItem="JiP-Yq-ggP" firstAttribute="leading" secondItem="lGD-Uc-Mvj" secondAttribute="leading" id="IsK-Dv-2SK"/>
+                            <constraint firstItem="JiP-Yq-ggP" firstAttribute="top" secondItem="ZBM-O2-fPR" secondAttribute="top" constant="18" id="L85-vr-XoE"/>
+                            <constraint firstItem="lGD-Uc-Mvj" firstAttribute="leading" secondItem="BeB-DH-vpN" secondAttribute="leadingMargin" id="Nua-FA-xDg"/>
+                            <constraint firstItem="W0w-pO-7IX" firstAttribute="centerX" secondItem="BeB-DH-vpN" secondAttribute="centerX" id="RNK-u9-2WG"/>
+                            <constraint firstItem="W0w-pO-7IX" firstAttribute="leading" secondItem="ZBM-O2-fPR" secondAttribute="leading" constant="43" id="Xn4-Mt-aDY"/>
+                            <constraint firstItem="lGD-Uc-Mvj" firstAttribute="top" secondItem="BeB-DH-vpN" secondAttribute="top" constant="236" id="a49-Xk-U82"/>
+                            <constraint firstItem="fYc-XF-CnO" firstAttribute="leading" secondItem="FbI-wv-MWj" secondAttribute="leading" id="aZm-7B-kxJ"/>
+                            <constraint firstItem="lGD-Uc-Mvj" firstAttribute="top" secondItem="JiP-Yq-ggP" secondAttribute="bottom" constant="48" id="alo-iS-mqg"/>
+                            <constraint firstItem="ZBM-O2-fPR" firstAttribute="trailing" secondItem="lGD-Uc-Mvj" secondAttribute="trailing" constant="154" id="bXH-SZ-fKz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZBM-O2-fPR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="more-512" id="LPr-9V-Qmq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cID-Yj-lE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532.5" y="218.66197183098592"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="pIl-wD-jkg">
+            <objects>
+                <viewController id="vQq-aO-bdN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oEp-AN-h0r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Hajj Helper!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9b-jM-5SY">
+                                <rect key="frame" x="16" y="270" width="288" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app will help you navigate, contact people, and give helpful tips so you can make the most out of the blessed Hajj." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-Qx-NlU">
+                                <rect key="frame" x="35" y="302" width="250" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="BfD-Lr-SjD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple kabah" translatesAutoresizingMaskIntoConstraints="NO" id="2ZH-6W-rnI">
+                                <rect key="frame" x="72" y="70" width="176" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="XkB-57-WKQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49479003396418547" green="0.79421164537749889" blue="0.81176633880000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6dD-oU-fHT" firstAttribute="bottom" secondItem="FnQ-Qx-NlU" secondAttribute="bottom" constant="43" id="F4T-c3-xFG"/>
+                            <constraint firstItem="2ZH-6W-rnI" firstAttribute="top" secondItem="6dD-oU-fHT" secondAttribute="top" constant="50" id="LZH-Pj-eVJ"/>
+                            <constraint firstItem="FnQ-Qx-NlU" firstAttribute="centerX" secondItem="b9b-jM-5SY" secondAttribute="centerX" id="Oda-EK-H2g"/>
+                            <constraint firstItem="FnQ-Qx-NlU" firstAttribute="centerX" secondItem="oEp-AN-h0r" secondAttribute="centerX" id="RKJ-Bb-DM4"/>
+                            <constraint firstItem="FnQ-Qx-NlU" firstAttribute="top" secondItem="b9b-jM-5SY" secondAttribute="bottom" constant="1" id="TqB-we-bSm"/>
+                            <constraint firstItem="2ZH-6W-rnI" firstAttribute="leading" secondItem="6dD-oU-fHT" secondAttribute="leading" constant="72" id="UVy-qz-q5t"/>
+                            <constraint firstItem="FnQ-Qx-NlU" firstAttribute="centerX" secondItem="2ZH-6W-rnI" secondAttribute="centerX" id="tWc-gE-3My"/>
+                            <constraint firstItem="FnQ-Qx-NlU" firstAttribute="leading" secondItem="6dD-oU-fHT" secondAttribute="leading" constant="35" id="zsb-At-uQu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6dD-oU-fHT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-512" id="Sou-Ne-Jt4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEW-YI-xNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530.625" y="900"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="kMT-Mz-JL1">
+            <objects>
+                <viewController id="T2Z-yz-J12" customClass="SecondViewController" customModule="HajjMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkX-8u-IlK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-7f-2iS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0fc-7f-2iS" secondAttribute="trailing" id="2gE-0b-EWc"/>
+                            <constraint firstItem="0fc-7f-2iS" firstAttribute="leading" secondItem="zkX-8u-IlK" secondAttribute="leading" id="I76-xU-4PH"/>
+                            <constraint firstItem="0fc-7f-2iS" firstAttribute="top" secondItem="zkX-8u-IlK" secondAttribute="top" id="KdJ-a5-Xpe"/>
+                            <constraint firstItem="0fc-7f-2iS" firstAttribute="bottom" secondItem="IbM-HV-r74" secondAttribute="bottom" id="og3-6i-e9G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IbM-HV-r74"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="678111-map-marker-513" id="QD2-y9-APd"/>
+                    <connections>
+                        <outlet property="map" destination="0fc-7f-2iS" id="S4L-MR-gPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkc-I1-bFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532.5" y="-446.83098591549299"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Gp3-Zf-gdN">
+            <objects>
+                <tabBarController id="0D9-DH-Tid" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n6e-WM-kgD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vQq-aO-bdN" kind="relationship" relationship="viewControllers" id="naM-pz-wfF"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ADd-YE-BW1"/>
+                        <segue destination="T2Z-yz-J12" kind="relationship" relationship="viewControllers" id="Bpd-KJ-tpj"/>
+                        <segue destination="pLt-kW-Vgr" kind="relationship" relationship="viewControllers" id="ALv-NL-tgs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxU-Rt-vjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="-107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="678111-map-marker-513" width="28" height="28"/>
+        <image name="emergencybutton-2" width="300" height="300"/>
+        <image name="hackathonblacklogo" width="999" height="420"/>
+        <image name="home-512" width="24" height="24"/>
+        <image name="more-512" width="25" height="25"/>
+        <image name="muslimfamily-1" width="458" height="458"/>
+        <image name="simple kabah" width="512" height="512"/>
+        <image name="speech-bubble-3" width="22" height="22"/>
+        <image name="stepsbutton-2" width="300" height="300"/>
+        <image name="tipsbutton-2" width="300" height="300"/>
+    </resources>
+</document>
